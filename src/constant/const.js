@@ -158,3 +158,15 @@ export const bankCode = {
   160111: "中信银行",
 };
 export const bankPngUrl = "https://a.amap.com/Loca/static/manual/image/";
+export const initialPosition = ["106.537191", "29.588054"];
+export const colors = [
+  // '#BB3D00',
+  // '#D94600',
+  // '#F75000',
+  "#4D0000",
+  "#930000",
+  "#FF0000",
+  "#FF5151",
+  "#FFB5B5",
+  "#FFECEC",
+];

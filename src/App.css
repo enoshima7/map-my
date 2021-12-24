@@ -13,57 +13,55 @@ body,
   top: 0;
   left: 0;
 }
-#hint {
+#hint,
+#areaInfo,
+#bankHint {
   position: absolute;
   top: 0;
   left: 0;
   padding: 8px;
-  /* width: 100px; */
+  /* min-width: 150px; */
   /* height: 50px; */
   z-index: 99;
+  visibility: hidden;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+#hint > div {
+  margin-bottom: 8px;
+}
+#areaInfo {
+  /* min-width: 150px; */
+  /* height: 50px; */
 }
 
-.inputFile {
+.toolsWrapper {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  /* height: 50px; */
-  z-index: 99;
-  background-color: #fff;
+  top: 134px;
+  right: 16px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: rgba(1, 1, 1, 0.5);
+  /* height: calc(100% - 96px); */
+  z-index: 1;
+  padding: 8px;
+  overflow-y: auto;
 }
-.startBtn,
-.endBtn {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 100px;
-  /* height: 50px; */
-  z-index: 99;
-  background-color: #fff;
+.toolItem {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  margin: 16px 0;
 }
-.endBtn {
-  left: 120px;
+.label {
+  margin-right: 8px;
+  padding-top: 4px;
+  min-width: 80px;
 }
-.hideHeatMapBtn,
-.heatMapBtn,
-.drawPolygon,
-.colorPicker {
-  position: absolute;
-  top: 120px;
-  left: 0;
-  width: 100px;
-  /* height: 50px; */
-  z-index: 99;
-  background-color: #fff;
+.tool > * {
+  margin-right: 16px;
 }
-.hideHeatMapBtn {
-  left: 120px;
-}
-.drawPolygon {
-  top: 160px;
-}
-.colorPicker {
-  top: 200px;
+.toolLabel {
+  margin: 8px 0;
 }
